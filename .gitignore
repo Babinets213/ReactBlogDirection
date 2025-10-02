@@ -1,0 +1,5 @@
+# Загальні виключення
+node_modules
+.env
+*.pem
+*.key

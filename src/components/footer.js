@@ -1,19 +1,24 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class Footer extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {  }
-    }
-    render() { 
-        return ( 
-            <div className="container-fluid bg-primary text-white">
-                <div className="py-3 ">
-                    <p className="mb-0">Copyright by bootcatch.com 2019</p>
-                </div>
-            </div>
-         );
-    }
+  render() {
+    const footerStyle = {
+      backgroundColor: "#007bff", // синій як bg-primary
+      color: "white",
+      textAlign: "center",
+      padding: "15px 0",
+      position: "fixed", // фіксує до низу
+      bottom: 0,
+      left: 0,
+      width: "100%",
+    };
+
+    return (
+      <footer style={footerStyle}>
+        <p style={{ margin: 0 }}>© bootcatch.com 2019</p>
+      </footer>
+    );
+  }
 }
- 
+
 export default Footer;
